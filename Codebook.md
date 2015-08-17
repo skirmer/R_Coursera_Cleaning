@@ -5,7 +5,7 @@ date: "Wednesday, August 05, 2015"
 output: html_document
 ---
 <h1>Introduction</h1>
-The files produced by this program (run_analysis.R) describe the results of a study of physical activity where data was collected using wearable technology. The original data was collected and packaged under the name "Human Activity Recognition Using Smartphones Dataset, Version 1.0" by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at the Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit‡ degli Studi di Genova. They can be contacted at activityrecognition@smartlab.ws.
+The files produced by this program (run_analysis.R) describe the results of a study of physical activity where data was collected using wearable technology. The original data was collected and packaged under the name "Human Activity Recognition Using Smartphones Dataset, Version 1.0" by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at the Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit√† degli Studi di Genova. They can be contacted at activityrecognition@smartlab.ws.
 
 This program assembles the varied data files in the original package, subsets to only include the variables regarding mean and standard deviation of values, and produces a neat file for analytic use. This file is "full_set_sorted" and is arranged in ascending order by study subject and activity. Second, the program assembles a summary file averaging the means and standard deviations shown in the first file, grouped by study subject and activity. This file is "full_set_means_sorted" and is also arranged in ascending order by study subject and activity. 
 
@@ -30,8 +30,8 @@ This program assembles the varied data files in the original package, subsets to
 
 Note that in the "full_set_sorted" file, the values shown for each variable are the original values given by the study originators. In the "full_set_means_sorted" file, the values show for each variable are the MEAN of the original values given by the study originators, grouped by study subject and activity.
 
-subjects
-activity
+subjects<BR>
+activity<BR>
 tBodyAcc-mean()-X                   
 tBodyAcc-mean()-Y                    
 tBodyAcc-mean()-Z                    
