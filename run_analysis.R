@@ -83,4 +83,5 @@ rm(test_all)
 rm(DT)
 rm(short_col_nums)
 
+#Create the output file in txt format, for use elsewhere as needed
 write.table(full_set_means_sorted, file="output.txt", row.name=FALSE)

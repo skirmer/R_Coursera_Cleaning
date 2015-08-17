@@ -17,7 +17,7 @@ This program assembles the varied data files in the original package, subsets to
 <li>Combine the "train" and "test" files to create two tables, each with subject number, activity number, and then the columns of collected data arranged in an orderly fashion. The result of this action is two data frames, test_all and train_all.</li> 
 <li>Further combine the two new data frames into a single master file, called full_set. This data frame contains all the study subjects, all activities done, and all data points collected on the activity performance.</li>
 <li>Because this program is designed to only examine standard deviation and mean variables, at this point the full_set data file is subsetted to keep only the columns of subjects, activity, and columns containing std (standard deviation) or mean in the titles. This brings the total column number down from 563 to 88. The resulting file is "short_full_set".</li> 
-<li>An additional column (actname) is added to the file, using a crosswalk of activity name to activity code, so that the name of each activity in character form is available on the file. Finally, the "short_full_set" file is sorted, producing the final "full_set_sorted" file, which is ready for analysis.</li>
+<li>An additional column (actname) is added to the file, using a crosswalk of activity name to activity code, so that the name of each activity in character form is available on the file. Finally, the "short_full_set" file is sorted, producing the final "full_set_sorted" file, which is ready for analysis. The activity number is retained in addition to the activity title for ease of analysis, as having a numeric code for activities could be useful for modeling.</li>
 </ol>
 
 <h2>Part 2:</h2> 
