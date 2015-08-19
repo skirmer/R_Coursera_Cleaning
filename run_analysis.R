@@ -2,6 +2,9 @@
 library("dplyr")
 library("data.table")
 
+# getwd()
+# try(setwd('Z:/Programming/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset'), silent=T)
+
 
 # Load each file into workspace
 test_subjects <- read.table("test/subject_test.txt", header=FALSE)
@@ -65,6 +68,45 @@ short_full_set$actname <- ifelse(short_full_set$activity==1, "WALKING",
 #Sort the files for tidiness
 full_set_means_sorted <- arrange(full_set_means, subjects, activity)
 full_set_sorted <- short_full_set[order(short_full_set$subjects, short_full_set$activity),]
+
+#Aesthetics 
+
+names(full_set_sorted) <-gsub("\\()", "", names(full_set_sorted))
+names(full_set_sorted) <-sub("-", "", names(full_set_sorted))
+names(full_set_sorted) <-sub("tGravity", "tGravity_", names(full_set_sorted))
+names(full_set_sorted) <-sub("tBody", "tBody_", names(full_set_sorted))
+names(full_set_sorted) <-sub("fBody", "fBody_", names(full_set_sorted))
+names(full_set_sorted) <- tolower(names(full_set_sorted))
+names(full_set_sorted) <-sub("mean", "_mean", names(full_set_sorted))
+names(full_set_sorted) <-sub("std", "_stdev", names(full_set_sorted))
+names(full_set_sorted) <-sub("acc", "acceleration", names(full_set_sorted))
+names(full_set_sorted) <-sub("gyro", "angular_velocity", names(full_set_sorted))
+names(full_set_sorted) <-sub("mag", "_magnitude", names(full_set_sorted))
+names(full_set_sorted) <-sub("jerk", "_jerk", names(full_set_sorted))
+names(full_set_sorted) <-sub("bodyacceleration", "body_acceleration", names(full_set_sorted))
+names(full_set_sorted) <-sub("bodyangular", "body_angular", names(full_set_sorted))
+names(full_set_sorted) <-sub("meanfreq", "mean_freq", names(full_set_sorted))
+names(full_set_sorted) <-sub("gravitymean", "gravity_mean", names(full_set_sorted))
+
+
+
+names(full_set_means_sorted) <-gsub("\\()", "", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("-", "", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("tGravity", "tGravity_", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("tBody", "tBody_", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("fBody", "fBody_", names(full_set_means_sorted))
+names(full_set_means_sorted) <-tolower(names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("mean", "_mean", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("std", "_stdev", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("acc", "acceleration", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("gyro", "angular_velocity", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("mag", "_magnitude", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("jerk", "_jerk", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("bodyacceleration", "body_acceleration", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("bodyangular", "body_angular", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("meanfreq", "mean_freq", names(full_set_means_sorted))
+names(full_set_means_sorted) <-sub("gravitymean", "gravity_mean", names(full_set_means_sorted))
+
 
 #clean up the workspace
 rm(act_labels)

@@ -30,92 +30,92 @@ This program assembles the varied data files in the original package, subsets to
 
 Note that in the "full_set_sorted" file, the values shown for each variable are the original values given by the study originators. In the "full_set_means_sorted" file, the values show for each variable are the MEAN of the original values given by the study originators, grouped by study subject and activity.
 
-subjects
-activity
-tBodyAcc-mean()-X                   
-tBodyAcc-mean()-Y                    
-tBodyAcc-mean()-Z                    
-tBodyAcc-std()-X                    
-tBodyAcc-std()-Y                     
-tBodyAcc-std()-Z                     
-tGravityAcc-mean()-X                
-tGravityAcc-mean()-Y                 
-tGravityAcc-mean()-Z                 
-tGravityAcc-std()-X                 
-tGravityAcc-std()-Y                  
-tGravityAcc-std()-Z                  
-tBodyAccJerk-mean()-X               
-tBodyAccJerk-mean()-Y                
-tBodyAccJerk-mean()-Z                
-tBodyAccJerk-std()-X                
-tBodyAccJerk-std()-Y                 
-tBodyAccJerk-std()-Z                 
-tBodyGyro-mean()-X                  
-tBodyGyro-mean()-Y                   
-tBodyGyro-mean()-Z                   
-tBodyGyro-std()-X                   
-tBodyGyro-std()-Y                    
-tBodyGyro-std()-Z                    
-tBodyGyroJerk-mean()-X              
-tBodyGyroJerk-mean()-Y               
-tBodyGyroJerk-mean()-Z               
-tBodyGyroJerk-std()-X               
-tBodyGyroJerk-std()-Y                
-tBodyGyroJerk-std()-Z                
-tBodyAccMag-mean()                  
-tBodyAccMag-std()                    
-tGravityAccMag-mean()                
-tGravityAccMag-std()                
-tBodyAccJerkMag-mean()               
-tBodyAccJerkMag-std()                
-tBodyGyroMag-mean()                 
-tBodyGyroMag-std()                   
-tBodyGyroJerkMag-mean()              
-tBodyGyroJerkMag-std()              
-fBodyAcc-mean()-X                    
-fBodyAcc-mean()-Y                    
-fBodyAcc-mean()-Z                   
-fBodyAcc-std()-X                     
-fBodyAcc-std()-Y                     
-fBodyAcc-std()-Z                    
-fBodyAcc-meanFreq()-X                
-fBodyAcc-meanFreq()-Y                
-fBodyAcc-meanFreq()-Z               
-fBodyAccJerk-mean()-X                
-fBodyAccJerk-mean()-Y                
-fBodyAccJerk-mean()-Z               
-fBodyAccJerk-std()-X                 
-fBodyAccJerk-std()-Y                 
-fBodyAccJerk-std()-Z                
-fBodyAccJerk-meanFreq()-X            
-fBodyAccJerk-meanFreq()-Y            
-fBodyAccJerk-meanFreq()-Z           
-fBodyGyro-mean()-X                   
-fBodyGyro-mean()-Y                   
-fBodyGyro-mean()-Z                  
-fBodyGyro-std()-X                    
-fBodyGyro-std()-Y                    
-fBodyGyro-std()-Z                   
-fBodyGyro-meanFreq()-X               
-fBodyGyro-meanFreq()-Y               
-fBodyGyro-meanFreq()-Z              
-fBodyAccMag-mean()                   
-fBodyAccMag-std()                    
-fBodyAccMag-meanFreq()              
-fBodyBodyAccJerkMag-mean()           
-fBodyBodyAccJerkMag-std()            
-fBodyBodyAccJerkMag-meanFreq()      
-fBodyBodyGyroMag-mean()              
-fBodyBodyGyroMag-std()               
-fBodyBodyGyroMag-meanFreq()         
-fBodyBodyGyroJerkMag-mean()          
-fBodyBodyGyroJerkMag-std()           
-fBodyBodyGyroJerkMag-meanFreq()     
-angle(tBodyAccMean,gravity)          
-angle(tBodyAccJerkMean),gravityMean) 
-angle(tBodyGyroMean,gravityMean)    
-angle(tBodyGyroJerkMean,gravityMean) 
-angle(X,gravityMean)                 
-angle(Y,gravityMean)                
-angle(Z,gravityMean)                 
-actname                             
+ subjects
+ activity
+ tbody_acceleration_mean-x
+ tbody_acceleration_mean-y
+ tbody_acceleration_mean-z
+ tbody_acceleration_stdev-x
+ tbody_acceleration_stdev-y
+ tbody_acceleration_stdev-z
+ tgravity_acceleration_mean-x
+ tgravity_acceleration_mean-y
+ tgravity_acceleration_mean-z
+ tgravity_acceleration_stdev-x
+ tgravity_acceleration_stdev-y
+ tgravity_acceleration_stdev-z
+ tbody_acceleration_jerk_mean-x
+ tbody_acceleration_jerk_mean-y
+ tbody_acceleration_jerk_mean-z
+ tbody_acceleration_jerk_stdev-x
+ tbody_acceleration_jerk_stdev-y
+ tbody_acceleration_jerk_stdev-z
+ tbody_angular_velocity_mean-x
+ tbody_angular_velocity_mean-y
+ tbody_angular_velocity_mean-z
+ tbody_angular_velocity_stdev-x
+ tbody_angular_velocity_stdev-y
+ tbody_angular_velocity_stdev-z
+ tbody_angular_velocity_jerk_mean-x
+ tbody_angular_velocity_jerk_mean-y
+ tbody_angular_velocity_jerk_mean-z
+ tbody_angular_velocity_jerk_stdev-x
+ tbody_angular_velocity_jerk_stdev-y
+ tbody_angular_velocity_jerk_stdev-z
+ tbody_acceleration_magnitude_mean
+ tbody_acceleration_magnitude_stdev
+ tgravity_acceleration_magnitude_mean
+ tgravity_acceleration_magnitude_stdev
+ tbody_acceleration_jerk_magnitude_mean
+ tbody_acceleration_jerk_magnitude_stdev
+ tbody_angular_velocity_magnitude_mean
+ tbody_angular_velocity_magnitude_stdev
+ tbody_angular_velocity_jerk_magnitude_mean
+ tbody_angular_velocity_jerk_magnitude_stdev
+ fbody_acceleration_mean-x
+ fbody_acceleration_mean-y
+ fbody_acceleration_mean-z
+ fbody_acceleration_stdev-x
+ fbody_acceleration_stdev-y
+ fbody_acceleration_stdev-z
+ fbody_acceleration_mean_freq-x
+ fbody_acceleration_mean_freq-y
+ fbody_acceleration_mean_freq-z
+ fbody_acceleration_jerk_mean-x
+ fbody_acceleration_jerk_mean-y
+ fbody_acceleration_jerk_mean-z
+ fbody_acceleration_jerk_stdev-x
+ fbody_acceleration_jerk_stdev-y
+ fbody_acceleration_jerk_stdev-z
+ fbody_acceleration_jerk_mean_freq-x
+ fbody_acceleration_jerk_mean_freq-y
+ fbody_acceleration_jerk_mean_freq-z
+ fbody_angular_velocity_mean-x
+ fbody_angular_velocity_mean-y
+ fbody_angular_velocity_mean-z
+ fbody_angular_velocity_stdev-x
+ fbody_angular_velocity_stdev-y
+ fbody_angular_velocity_stdev-z
+ fbody_angular_velocity_mean_freq-x
+ fbody_angular_velocity_mean_freq-y
+ fbody_angular_velocity_mean_freq-z
+ fbody_acceleration_magnitude_mean
+ fbody_acceleration_magnitude_stdev
+ fbody_acceleration_magnitude_mean_freq
+ fbody_body_acceleration_jerk_magnitude_mean
+ fbody_body_acceleration_jerk_magnitude_stdev
+ fbody_body_acceleration_jerk_magnitude_mean_freq
+ fbody_body_angular_velocity_magnitude_mean
+ fbody_body_angular_velocity_magnitude_stdev
+ fbody_body_angular_velocity_magnitude_mean_freq
+ fbody_body_angular_velocity_jerk_magnitude_mean
+ fbody_body_angular_velocity_jerk_magnitude_stdev
+ fbody_body_angular_velocity_jerk_magnitude_mean_freq
+ angle(tbody_acceleration_mean,gravity)
+ angle(tbody_acceleration_jerk_mean),gravity_mean)
+ angle(tbody_angular_velocity_mean,gravity_mean)
+ angle(tbody_angular_velocity_jerk_mean,gravity_mean)
+ angle(x,gravity_mean)
+ angle(y,gravity_mean)
+ angle(z,gravity_mean)
+ actname
