@@ -5,7 +5,7 @@ date: "Wednesday, August 05, 2015"
 output: html_document
 ---
 <h1>Introduction</h1>
-The files produced by this program (run_analysis.R) describe the results of a study of physical activity where data was collected using wearable technology. The original data was collected and packaged under the name "Human Activity Recognition Using Smartphones Dataset, Version 1.0" by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at the Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit‡ degli Studi di Genova. They can be contacted at activityrecognition@smartlab.ws.
+The files produced by this program (run_analysis.R) describe the results of a study of physical activity where data was collected using wearable technology. The original data was collected and packaged under the name "Human Activity Recognition Using Smartphones Dataset, Version 1.0" by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at the Smartlab - Non Linear Complex Systems Laboratory, DITEN - Universit√† degli Studi di Genova. They can be contacted at activityrecognition@smartlab.ws.
 
 This program assembles the varied data files in the original package, subsets to only include the variables regarding mean and standard deviation of values, and produces a neat file for analytic use. This file is "full_set_sorted" and is arranged in ascending order by study subject and activity. Second, the program assembles a summary file averaging the means and standard deviations shown in the first file, grouped by study subject and activity. This file is "full_set_means_sorted" and is also arranged in ascending order by study subject and activity. 
 
@@ -30,6 +30,7 @@ This program assembles the varied data files in the original package, subsets to
 
 Note that in the "full_set_sorted" file, the values shown for each variable are the original values given by the study originators. In the "full_set_means_sorted" file, the values show for each variable are the MEAN of the original values given by the study originators, grouped by study subject and activity.
 
+<<<<<<< HEAD
  subjects
  activity
  tbody_acceleration_mean-x
@@ -119,3 +120,94 @@ Note that in the "full_set_sorted" file, the values shown for each variable are 
  angle(y,gravity_mean)
  angle(z,gravity_mean)
  actname
+=======
+subjects<BR>
+activity<BR>
+tBodyAcc-mean()-X                   
+tBodyAcc-mean()-Y                    
+tBodyAcc-mean()-Z                    
+tBodyAcc-std()-X                    
+tBodyAcc-std()-Y                     
+tBodyAcc-std()-Z                     
+tGravityAcc-mean()-X                
+tGravityAcc-mean()-Y                 
+tGravityAcc-mean()-Z                 
+tGravityAcc-std()-X                 
+tGravityAcc-std()-Y                  
+tGravityAcc-std()-Z                  
+tBodyAccJerk-mean()-X               
+tBodyAccJerk-mean()-Y                
+tBodyAccJerk-mean()-Z                
+tBodyAccJerk-std()-X                
+tBodyAccJerk-std()-Y                 
+tBodyAccJerk-std()-Z                 
+tBodyGyro-mean()-X                  
+tBodyGyro-mean()-Y                   
+tBodyGyro-mean()-Z                   
+tBodyGyro-std()-X                   
+tBodyGyro-std()-Y                    
+tBodyGyro-std()-Z                    
+tBodyGyroJerk-mean()-X              
+tBodyGyroJerk-mean()-Y               
+tBodyGyroJerk-mean()-Z               
+tBodyGyroJerk-std()-X               
+tBodyGyroJerk-std()-Y                
+tBodyGyroJerk-std()-Z                
+tBodyAccMag-mean()                  
+tBodyAccMag-std()                    
+tGravityAccMag-mean()                
+tGravityAccMag-std()                
+tBodyAccJerkMag-mean()               
+tBodyAccJerkMag-std()                
+tBodyGyroMag-mean()                 
+tBodyGyroMag-std()                   
+tBodyGyroJerkMag-mean()              
+tBodyGyroJerkMag-std()              
+fBodyAcc-mean()-X                    
+fBodyAcc-mean()-Y                    
+fBodyAcc-mean()-Z                   
+fBodyAcc-std()-X                     
+fBodyAcc-std()-Y                     
+fBodyAcc-std()-Z                    
+fBodyAcc-meanFreq()-X                
+fBodyAcc-meanFreq()-Y                
+fBodyAcc-meanFreq()-Z               
+fBodyAccJerk-mean()-X                
+fBodyAccJerk-mean()-Y                
+fBodyAccJerk-mean()-Z               
+fBodyAccJerk-std()-X                 
+fBodyAccJerk-std()-Y                 
+fBodyAccJerk-std()-Z                
+fBodyAccJerk-meanFreq()-X            
+fBodyAccJerk-meanFreq()-Y            
+fBodyAccJerk-meanFreq()-Z           
+fBodyGyro-mean()-X                   
+fBodyGyro-mean()-Y                   
+fBodyGyro-mean()-Z                  
+fBodyGyro-std()-X                    
+fBodyGyro-std()-Y                    
+fBodyGyro-std()-Z                   
+fBodyGyro-meanFreq()-X               
+fBodyGyro-meanFreq()-Y               
+fBodyGyro-meanFreq()-Z              
+fBodyAccMag-mean()                   
+fBodyAccMag-std()                    
+fBodyAccMag-meanFreq()              
+fBodyBodyAccJerkMag-mean()           
+fBodyBodyAccJerkMag-std()            
+fBodyBodyAccJerkMag-meanFreq()      
+fBodyBodyGyroMag-mean()              
+fBodyBodyGyroMag-std()               
+fBodyBodyGyroMag-meanFreq()         
+fBodyBodyGyroJerkMag-mean()          
+fBodyBodyGyroJerkMag-std()           
+fBodyBodyGyroJerkMag-meanFreq()     
+angle(tBodyAccMean,gravity)          
+angle(tBodyAccJerkMean),gravityMean) 
+angle(tBodyGyroMean,gravityMean)    
+angle(tBodyGyroJerkMean,gravityMean) 
+angle(X,gravityMean)                 
+angle(Y,gravityMean)                
+angle(Z,gravityMean)                 
+actname                             
+>>>>>>> origin/master
